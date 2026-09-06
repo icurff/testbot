@@ -1,7 +1,6 @@
 # Stage 1: Build TypeScript & download prebuilt dependencies
 FROM node:22-bookworm-slim AS builder
 
-WORKDIR /app
 
 # Copy package manifests
 COPY package*.json ./
