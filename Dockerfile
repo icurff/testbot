@@ -3,7 +3,7 @@ FROM node:22-bookworm-slim AS builder
 
 
 # Copy package manifests
-COPY package*.json ./
+COPY packag
 
 # Install dependencies (Node 22 matches official better-sqlite3 prebuilt binaries - NO C++ compilation needed!)
 RUN npm ci
